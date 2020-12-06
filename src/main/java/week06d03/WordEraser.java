@@ -10,13 +10,13 @@ public class WordEraser {
         String wordToCheck;
         while (s.hasNext()) {
             wordToCheck = s.next();
-            if (wordToCheck == word){
-                sb.append(" " + " ");
+            if (wordToCheck.equals(word)){
+                sb.append("");
             } else {
-                sb.append(" " + wordToCheck);
+                sb.append(wordToCheck + " ");
             }
         }
-        String result = sb.toString();
+        String result = sb.toString().trim();
         return result;
     }
     public static void main(String[] args) {
