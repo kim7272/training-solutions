@@ -46,3 +46,4 @@ public class ListCounterTest {
         assertEquals(0, count);
     }
 }
+

@@ -5,9 +5,9 @@ import java.util.ArrayList;
 
 public class ListCounter {
 
-    int counter = 0;
 
     public int countList(List<String> listToCheck) {
+        int counter = 0;
         for (String item : listToCheck) {
             String itemSmall = item.toLowerCase();
             if (itemSmall.startsWith("a")) {
