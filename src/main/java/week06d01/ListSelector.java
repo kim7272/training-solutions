@@ -8,14 +8,11 @@ public class ListSelector {
 
     public String textFromList(List<String> list){
     if (list == null)
-
     {
         throw new IllegalArgumentException("Invalid parameter!");
     }
-
         StringBuilder textBuilder = new StringBuilder();
         textBuilder.append("[");
-
 
         if (list.isEmpty()) {
             textBuilder.append("");
@@ -36,7 +33,6 @@ public class ListSelector {
                 }
                 textBuilder.append(list.get(list.size() - 1));
                 }
-
         }
         textBuilder.append("]");
 
@@ -45,7 +41,7 @@ public class ListSelector {
     }
 
     public static void main(String[] args) {
-        System.out.println(new ListSelector().textFromList(Arrays.asList("Bombay", "Chennay", "Delhi", "Bangalore","Kahmir")));
+        System.out.println(new ListSelector().textFromList(Arrays.asList("")));
     }
   }
 
