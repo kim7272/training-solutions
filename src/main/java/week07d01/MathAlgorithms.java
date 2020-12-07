@@ -2,10 +2,10 @@ package week07d01;
 
 public class MathAlgorithms {
 
-    private static int x= 1;
+    private static int x;
 
     public static boolean isPrime(int x) {
-        if (x < 0) {
+        if (x <= 0) {
             throw new IllegalArgumentException("x should be a positive integer!");
         }
         boolean b = true;
