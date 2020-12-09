@@ -22,7 +22,7 @@ public class NumberListTest {
 
     public void NumberListTestDescend(){
 
-        assertEquals(false, new NumberList().isIncreasing(Arrays.asList(1,2,4,3,5)));
+        assertEquals(false, new NumberList().isIncreasing(Arrays.asList(1, 2, 3, 5, 4)));
     }
 
     @Test
