@@ -10,7 +10,7 @@ public class Robot {
                 (string.charAt(i) != 'L') &&
                (string.charAt(i) != 'J') &&
                (string.charAt(i) != 'B')) {
-            throw new IllegalArgumentException("Rossz adatmegadás!");
+            throw new IllegalArgumentException("Invalid parameter!");
             }
 
             if (string.charAt(i) == 'F') {
@@ -30,7 +30,7 @@ public class Robot {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Robot().move("XY")[0] + " " + new Robot().move("XY")[1]);
+        System.out.println(new Robot().move("FF")[0] + " " + new Robot().move("FF")[1]);
     }
 }
 
