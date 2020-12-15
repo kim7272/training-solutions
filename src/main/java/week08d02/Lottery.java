@@ -8,10 +8,14 @@ public class Lottery {
 
     Random rand = new Random();
     List<Integer> selectedNumbers = new ArrayList<>();
+    int newNumber;
 
     public List<Integer> getNumbers(int interval, int numbers){
-        for (int i = 0; i < numbers; i++){
-            selectedNumbers.add(1 + rand.nextInt(interval));
+        while (selectedNumbers.size() < numbers){
+            newNumber = (1 + rand.nextInt(interval));
+            if (!(selectedNumbers.contains(newNumber))) {
+            selectedNumbers.add(newNumber);
+            }
         }
         return selectedNumbers;
     }
