@@ -9,7 +9,7 @@ public class MathAlgorithmsTest {
         @Test
         public void testGreatestCommonDivisor(){
 
-            assertEquals(2, new MathAlgorithms().greatestCommonDivisor(8,6));
+            assertEquals(2, new MathAlgorithms().greatestCommonDivisor(6,8));
         }
 
 
