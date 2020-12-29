@@ -1,6 +1,7 @@
 package week09d03;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class SantaClaus {
@@ -18,4 +19,10 @@ public class SantaClaus {
         }
         return presents;
     }
+
+
+    public static void main(String[] args) {
+        System.out.println(new SantaClaus(Arrays.asList(new Person("Feri", 48), new Person("Laci",12))).getThroughChimney());
+    }
+
 }
