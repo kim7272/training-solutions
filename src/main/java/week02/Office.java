@@ -44,11 +44,12 @@ public class Office {
                 System.out.print(" Length:" + meetingRooms.get(i).getLength());
                 System.out.println(" Area:" + meetingRooms.get(i).getArea());
             }
+            System.out.println("     ");
         }
     }
     public void printMeetingRoomsContains(String part) {
         for (int i = 0; i < meetingRooms.size(); i++) {
-            if (meetingRooms.get(i).getName().indexOf(part) != -1) {
+            if (meetingRooms.get(i).getName().toLowerCase().indexOf(part) != -1) {
                 System.out.print(" Name: " + meetingRooms.get(i).getName());
                 System.out.print(" Width:" + meetingRooms.get(i).getWidth());
                 System.out.print(" Length:" + meetingRooms.get(i).getLength());
