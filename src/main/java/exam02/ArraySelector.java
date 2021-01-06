@@ -14,7 +14,8 @@ public class ArraySelector {
         }
         String evenItemsString = evenItems.toString();
         if (evenItemsString.isBlank()) {
-            return "";
+            evenItemsString.replace("[","").replace("]","");
+            return evenItemsString;
         } else {
             return evenItemsString;
         }
