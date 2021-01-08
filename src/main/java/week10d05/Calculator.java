@@ -11,7 +11,6 @@ public class Calculator {
         }
         Arrays.sort(arr);
         int minSum = 0;
-        int counter = 0;
         for (int i = 0; i < 4; i++){
             minSum = minSum + arr[i];
         }

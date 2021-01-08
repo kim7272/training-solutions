@@ -18,5 +18,7 @@ class CalculatorTest {
     @Test
     public void findMinSumTest(){
         assertEquals(11, new Calculator().findMinSum(new int[] {5,3,1,2}));
+        assertEquals(10, new Calculator().findMinSum(new int[] {5,4,3,1,2}));
+        assertEquals(10, new Calculator().findMinSum(new int[] {1,2,3,4,5,6}));
     }
 }
