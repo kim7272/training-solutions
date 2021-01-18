@@ -25,4 +25,10 @@ class GradeRounderTest {
         assertEquals("Invalid parameter!", ex.getMessage());
     }
 
+    @Test
+    public void testWithParameterOutsideOfRange() {
+        Exception ex = assertThrows(IllegalArgumentException.class, () -> new GradeRounder().roundGrades(new int[] {38,39,45,46,-2,60}));
+        assertEquals("Invalid parameter!", ex.getMessage());
+    }
+
 }

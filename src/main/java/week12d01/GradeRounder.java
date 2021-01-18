@@ -13,7 +13,10 @@ public class GradeRounder {
       int[] roundedGrades =  new int[grades.length];
 
       for (int i = 0; i < grades.length; i++){
-          if (grades[i] < 40 || grades[i] % 5 < 3){
+          if (grades[i] < 0  || grades[i] > 100) {
+              throw new IllegalArgumentException("Invalid parameter!");
+          }
+          else if (grades[i] < 40 || grades[i] % 5 < 3){
               roundedGrades[i] = grades[i];
           }
           else {
