@@ -28,7 +28,10 @@ public class Phone {
 
     public static void main(String[] args) {
         Phone phone = new Phone("Nokia", 126);
-        System.out.println(phone.getType());
+        Phone phone2 = new Phone("Sony", 256);
+        System.out.print(phone.getType() + " ");
         System.out.println(phone.getMem());
+        System.out.print(phone2.getType() + " ");
+        System.out.println(phone2.getMem());
     }
 }
