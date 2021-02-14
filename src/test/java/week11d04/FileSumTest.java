@@ -10,10 +10,10 @@ class FileSumTest {
     void sumNumbers() {
 
         FileSum fileSum = new FileSum();
-        //System.out.println(fileSum.fileContent("number01.txt"));
-        //System.out.println(fileSum.sumNumbers());
 
         int actual = new FileSum().sumNumbers();
-        int expexted = 313;
+        int expected = 313;
+
+        assertEquals(expected, actual);
     }
 }
