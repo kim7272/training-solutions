@@ -1,5 +1,5 @@
 
-package exam03;
+/* package exam03;
 
         import org.junit.jupiter.api.Test;
 
@@ -14,3 +14,5 @@ public class PassengerTest {
         assertEquals(CruiseClass.LUXURY, passenger.getCruiseClass());
     }
 }
+
+ */
