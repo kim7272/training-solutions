@@ -1,6 +1,6 @@
 package exam03;
 
-public enum CruiseClass {
+public enum CruiseClass  {
 
     LUXURY, FIRST, SECOND;
 

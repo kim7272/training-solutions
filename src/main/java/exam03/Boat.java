@@ -1,6 +1,6 @@
 package exam03;
 
-public class Boat {
+public class Boat  {
 
     private String name;
     private int maxPassengers;

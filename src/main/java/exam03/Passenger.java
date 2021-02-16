@@ -1,6 +1,6 @@
  package exam03;
 
-public class Passenger {
+public class Passenger  {
 
     private String name;
     private CruiseClass cruiseClass;
@@ -17,6 +17,7 @@ public class Passenger {
     public CruiseClass getCruiseClass() {
         return cruiseClass;
     }
+
 }
 
 

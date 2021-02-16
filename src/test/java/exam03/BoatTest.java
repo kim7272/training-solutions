@@ -1,5 +1,5 @@
 
-/* package exam03;
+ package exam03;
 
 import org.junit.jupiter.api.Test;
 
@@ -14,5 +14,3 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
             assertEquals(15, boat.getMaxPassengers());
         }
     }
-
- */
