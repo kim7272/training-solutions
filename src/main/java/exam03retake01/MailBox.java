@@ -7,6 +7,14 @@ public class MailBox {
 
     private List<Mail> mails = new ArrayList<>();
 
+    public List<Mail> getMails() {
+        return mails;
+    }
+
+    public void addMail(Mail mail){
+       mails.add(mail);
+    }
+
     public List<Mail> findByCriteria(String criteria) {
         List<Mail> result = new ArrayList<>();
         criteria.toLowerCase();
@@ -21,7 +29,7 @@ public class MailBox {
         } else if (criteria.contains("from:john")) {
             String[] parts = criteria.split(":");
             for (Mail mail : mails) {
-                if (mail.getContact().getName().equals(parts[1]) || mail.getContact().getEmail().equals(parts[1])) {
+                if (mail.getFrom().getName().equals(parts[1]) || mail.getFrom().getEmail().equals(parts[1])) {
                     selected.add(mail);
                 }
             }
@@ -29,7 +37,7 @@ public class MailBox {
         } else if (criteria.contains("to:john")) {
             String[] parts = criteria.split(":");
             for (Mail mail : mails) {
-                if (mail.getContact().equals(parts[1]) || mail.getContact().getEmail().equals(parts[1])) {
+                if (mail.getFrom().equals(parts[1]) || mail.getFrom().getEmail().equals(parts[1])) {
                     selected.add(mail);
                 }
             }

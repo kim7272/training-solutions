@@ -5,13 +5,20 @@ import java.util.List;
 
 public class Mail {
 
-    private Contact contact;
+    public Mail(Contact contact, List<Contact> to, String subject, String message) {
+        this.from = contact;
+        this.to = to;
+        this.subject = subject;
+        this.message = message;
+    }
+
+    private Contact from;
     private List<Contact> to = new ArrayList<>();
     private String subject;
     private String message;
 
-    public Contact getContact() {
-        return contact;
+    public Contact getFrom() {
+        return from;
     }
 
     public List<Contact> getTo() {
