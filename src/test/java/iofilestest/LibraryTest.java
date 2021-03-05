@@ -25,7 +25,6 @@ class LibraryTest {
     @Test
     public void testSaveBooks() throws IOException {
 
-        System.out.println(file);
         List<Book> books = new ArrayList<>();
         books.add(new Book("John Doe", "Alpha"));
         books.add(new Book("Jane Doe", "Beta"));

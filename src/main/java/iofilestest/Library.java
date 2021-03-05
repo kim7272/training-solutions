@@ -52,7 +52,7 @@ public class Library {
         List<Book> books = Arrays.asList(new Book("John Doe", "Alpha"), new Book("Jane Doe", "Beta"),
                 new Book ("Jack Doe", "Gamma"));
         Library library = new Library(books);
-        library.saveBooks(Path.of("C:/training/training-solutions/src/main/resources/proba/books.txt"));
+        library.saveBooks( Path.of("C:/training/training-solutions/src/main/resources/proba/books.txt"));
         List<Book> result = library.loadBooks(Path.of("C:/training/training-solutions/src/main/resources/proba/books.txt"));
            System.out.println(result);
     }
