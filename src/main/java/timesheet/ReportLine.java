@@ -27,4 +27,5 @@ public class ReportLine {
     public void addTime(long i) {
         time = time + i;
     }
+
 }
